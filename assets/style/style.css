@@ -1,0 +1,20 @@
+@import url(blackjack.css);
+
+:root {
+  --color--primary: #0b8258;
+  --color-secondary: #16823f;
+  --color-bg: #063d0e;
+  --color: rgb(199, 225, 206);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg);
+}

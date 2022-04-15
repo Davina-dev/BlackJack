@@ -1,0 +1,84 @@
+.container {
+  margin: 1em;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #010101;
+}
+h2 {
+  color: var(--color);
+  font-weight: 300;
+}
+header {
+  box-shadow: 2px 1px 3px 1px rgba(241, 238, 238, 0.2);
+  width: 15em;
+  height: 2em;
+  align-items: center;
+  border-radius: 6em;
+  color: var(--color--primary);
+  font-size: xx-large;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  margin: 3em 0 1em 0;
+  position: sticky;
+}
+.cards img {
+  height: 20em;
+}
+.result {
+  color: var(--color);
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 3em;
+  height: 3em;
+  width: 6em;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  color: var(--color--primary);
+  background-color: rgb(242, 250, 247);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--color--primary);
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: var(--color);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+footer {
+  height: 20em;
+  width: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #0b8258 2.08%,
+    #010101 66.15%
+  );
+}
