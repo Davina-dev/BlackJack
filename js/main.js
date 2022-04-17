@@ -7,11 +7,11 @@ var yourAceCount = 0
 var hidden
 var deck
 
-var canHit = true //allows the player (you) to draw while yourSum <= 21
+var canHit = true // while yourSum <= 21
 
 window.onload = function () {
   buildDeck()
-  shuffleDeck()
+  shuffleDeck() //barajar
   startGame()
 }
 
@@ -114,11 +114,11 @@ function stay() {
   }
   //both you and dealer <= 21
   else if (yourSum == dealerSum) {
-    message = 'Tie!'
+    message = '...Tie...'
   } else if (yourSum > dealerSum) {
-    message = 'You Win!'
+    message = '👍 You Win!'
   } else if (yourSum < dealerSum) {
-    message = 'You Lose!'
+    message = '👎 You Lose!'
   }
 
   document.getElementById('dealer-sum').innerText = dealerSum
