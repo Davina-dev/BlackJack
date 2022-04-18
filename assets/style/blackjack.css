@@ -71,6 +71,11 @@ header {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+
+a{
+  text-decoration: none;
+  color: var(--color--primary);
+}
 footer {
   height: 6em;
   width: 100%;
@@ -79,4 +84,5 @@ footer {
     #0b8258 2.08%,
     #010101 66.15%
   );
+
 }
