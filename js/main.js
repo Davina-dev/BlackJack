@@ -134,14 +134,22 @@ function stay() {
 
 
 function restart(){   
+  clean()
+  //cartas deleader
+  canHit = true 
+  onload()
+}
+
+function clean(){
   document.getElementById('dealer-sum').innerText =0
   document.getElementById('your-sum').innerText = 0
   document.getElementById('results').innerText = ""
+  document.getElementById('your-sum').innerText = 0
+
+  document.getElementById('your-cards').innerText = "";
+  //document.getElementById('dealer-cards').innerText = "";
  
-  //limpiar cartas
 }
-
-
 
 
 function getValue(card) {
