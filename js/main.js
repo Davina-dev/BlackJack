@@ -1,13 +1,16 @@
-var dealerSum = 0
-var yourSum = 0
 
-var dealerAceCount = 0
-var yourAceCount = 0
 
-var hidden
-var deck
 
-var canHit = true //allows the player (you) to draw while yourSum <= 21
+let dealerSum = 0
+let yourSum = 0
+
+let dealerAceCount = 0
+let yourAceCount = 0
+
+let hidden
+let deck
+
+let canHit = true 
 
 window.onload = function () {
   buildDeck()
@@ -15,7 +18,7 @@ window.onload = function () {
   startGame()
 }
 
-function buildDeck() {
+ function buildDeck() {
   let values = [
     'A',
     '2',
@@ -36,28 +39,29 @@ function buildDeck() {
 
   for (let i = 0; i < types.length; i++) {
     for (let j = 0; j < values.length; j++) {
-      deck.push(values[j] + '-' + types[i]) //A-C -> K-C, A-D -> K-D
+      deck.push(values[j] + '-' + types[i]) // 52 cards
     }
   }
   // console.log(deck);
-}
+} 
 
-function shuffleDeck() {
+function shuffleDeck() { //random cards
   for (let i = 0; i < deck.length; i++) {
     let j = Math.floor(Math.random() * deck.length) // (0-1) * 52 => (0-51.9999)
     let temp = deck[i]
     deck[i] = deck[j]
     deck[j] = temp
   }
-  console.log(deck)
+  console.log(deck) 
 }
 
 function startGame() {
   hidden = deck.pop()
-  dealerSum += getValue(hidden)
+  dealerSum += getValue(hidden) // ej k-C valor(hidden) 10
   dealerAceCount += checkAce(hidden)
 
   while (dealerSum < 17) {
+    //<img>
     let cardImg = document.createElement('img')
     let card = deck.pop()
     cardImg.src = './assets/cards/' + card + '.png'
@@ -79,7 +83,9 @@ function startGame() {
   console.log(yourSum)
   document.getElementById('hit').addEventListener('click', hit)
   document.getElementById('stay').addEventListener('click', stay)
+  document.getElementById('restart').addEventListener('click', restart)
 }
+
 
 function hit() {
   if (!canHit) {
@@ -93,8 +99,8 @@ function hit() {
   yourAceCount += checkAce(card)
   document.getElementById('your-cards').append(cardImg)
 
-  if (reduceAce(yourSum, yourAceCount) > 21) {
-    //A, J, 8 -> 1 + 10 + 8
+  if (reduceAce(yourSum, yourAceCount) > 21) {  
+ 
     canHit = false
   }
 }
@@ -126,6 +132,18 @@ function stay() {
   document.getElementById('results').innerText = message
 }
 
+
+function restart(){   
+  document.getElementById('dealer-sum').innerText =0
+  document.getElementById('your-sum').innerText = 0
+  document.getElementById('results').innerText = ""
+ 
+  //limpiar cartas
+}
+
+
+
+
 function getValue(card) {
   let data = card.split('-') // "4-C" -> ["4", "C"]
   let value = data[0]
@@ -147,7 +165,7 @@ function checkAce(card) {
   return 0
 }
 
-function reduceAce(playerSum, playerAceCount) {
+function reduceAce(playerSum, playerAceCount) {    
   while (playerSum > 21 && playerAceCount > 0) {
     playerSum -= 10
     playerAceCount -= 1

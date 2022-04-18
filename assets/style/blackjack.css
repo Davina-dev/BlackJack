@@ -1,6 +1,4 @@
 .container {
-  margin: 1em;
-  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +24,8 @@ header {
   position: sticky;
 }
 .cards img {
-  height: 20em;
+  height: 16em;
+  margin-left: 1em;
 }
 .result {
   color: var(--color);
@@ -36,7 +35,6 @@ header {
 
 .btn {
   margin: 3em;
-  height: 3em;
   width: 6em;
   font-weight: bold;
   position: relative;
@@ -74,7 +72,7 @@ header {
   opacity: 0;
 }
 footer {
-  height: 20em;
+  height: 6em;
   width: 100%;
   background: radial-gradient(
     50% 50% at 50% 50%,
