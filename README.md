@@ -16,6 +16,7 @@
 - [JavaScript](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 ## Demo
  - https://blackjack-davina.netlify.app/
+ - [![Netlify Status](https://api.netlify.com/api/v1/badges/e2dad39b-9404-4b56-85e3-a31bebee1d3c/deploy-status)](https://app.netlify.com/sites/blackjack-davina/deploys)
 ---
 
 ⌨️ with ❤️ by [Davina](https://www.linkedin.com/in/davinamedina/) 😊
