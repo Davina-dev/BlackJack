@@ -15,7 +15,8 @@
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 ## Demo
- - https://github.com/Davina-dev/BlackJack
+ - https://blackjack-davina.netlify.app/
+ - This image automatically updates to reflect the current state of your latest production deploy. You can use the markdown snippet below to add it to your project README.
 ---
 
 ⌨️ with ❤️ by [Davina](https://www.linkedin.com/in/davinamedina/) 😊
