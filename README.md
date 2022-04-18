@@ -15,7 +15,7 @@
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 ## Demo
- - <p> </p>
+ - https://github.com/Davina-dev/BlackJack
 ---
 
 ⌨️ with ❤️ by [Davina](https://www.linkedin.com/in/davinamedina/) 😊
