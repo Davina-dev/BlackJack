@@ -7,12 +7,12 @@
 }
 h2 {
   color: var(--color);
-  font-weight: 300;
 }
+
 header {
   box-shadow: 2px 1px 3px 1px rgba(241, 238, 238, 0.2);
-  width: 15em;
-  height: 2em;
+  width: 10em;
+  height: 1.5em;
   align-items: center;
   border-radius: 6em;
   color: var(--color--primary);
@@ -20,13 +20,15 @@ header {
   font-weight: bolder;
   display: flex;
   justify-content: center;
-  margin: 3em 0 1em 0;
+  margin: 2.2em 0 .5em 0;
   position: sticky;
 }
+
 .cards img {
-  height: 16em;
+  height: 14em;
   margin-left: 1em;
 }
+
 .result {
   color: var(--color);
   font-size: 25pt;
@@ -34,7 +36,7 @@ header {
 }
 
 .btn {
-  margin: 3em;
+  margin: 4em 0 0em 2em;
   width: 6em;
   font-weight: bold;
   position: relative;
@@ -77,6 +79,7 @@ a{
   color: var(--color--primary);
 }
 footer {
+  margin-top: -2em;
   height: 6em;
   width: 100%;
   background: radial-gradient(
